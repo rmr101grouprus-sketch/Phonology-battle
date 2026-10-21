@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Phonology Battle is a playful language-learning website designed to teach sound patterns, stress, and phoneme recognition through quick interactive challenges."
+    />
+    <title>Phonology Battle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="container nav">
+          <div class="brand" aria-label="Phonology Battle home">
+            <span class="brand-mark">PB</span>
+            <span>Phonology Battle</span>
+          </div>
+          <div class="nav-links" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a href="#play">How it works</a>
+            <a href="#scoreboard">Leaderboard</a>
+          </div>
+          <a href="#cta" class="button primary">Play demo</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Language learning game</p>
+              <h1>
+                Turn phonology into a
+                <span>battle of patterns.</span>
+              </h1>
+              <p class="lede">
+                Challenge your ear, sharpen your listening, and build confidence in
+                phoneme recognition, stress patterns, and sound alternations.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#cta" class="button primary large">Start the challenge</a>
+                <a href="#features" class="button secondary large">Explore features</a>
+              </div>
+
+              <div class="stats" aria-label="Performance stats">
+                <div>
+                  <strong>3x</strong>
+                  <span>faster recall</span>
+                </div>
+                <div>
+                  <strong>120+</strong>
+                  <span>sound patterns</span>
+                </div>
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>learner rating</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card" aria-live="polite">
+              <div class="card-header">
+                <span class="status-dot"></span>
+                <span>Current challenge</span>
+              </div>
+
+              <div class="prompt-box">
+                <span class="round-label">Round 04</span>
+                <h2 id="challenge-title">Choose the sound pattern that fits.</h2>
+                <div class="choice-list" id="choice-list">
+                  <button type="button" class="choice">/tʃiːn/</button>
+                  <button type="button" class="choice active">/ʃiːn/</button>
+                  <button type="button" class="choice">/tiːn/</button>
+                </div>
+              </div>
+
+              <div class="progress-wrap" aria-label="Progress bar">
+                <div class="progress-labels">
+                  <span>Skill progress</span>
+                  <span>72%</span>
+                </div>
+                <div class="progress-bar">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="features container">
+          <div class="section-heading">
+            <p class="eyebrow">Built for learners</p>
+            <h2>Practice the sounds that matter.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">🎧</div>
+              <h3>Listening drills</h3>
+              <p>
+                Train your ear with rapid-fire audio prompts, matching exercises, and
+                phoneme contrasts.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🧠</div>
+              <h3>Pattern recognition</h3>
+              <p>
+                Spot stress shifts, syllable changes, and sound alternations across
+                real-world word families.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">⚔️</div>
+              <h3>Game-based rounds</h3>
+              <p>
+                Turn study sessions into short competitive missions with score,
+                streaks, and progression.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="play" class="experience container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">How it works</p>
+            <h2>From first sound to mastery.</h2>
+          </div>
+
+          <div class="steps">
+            <div class="step-item">
+              <span class="step-number">01</span>
+              <div>
+                <h3>Hear the pattern</h3>
+                <p>Listen to minimal pairs and stress examples designed for quick recognition.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">02</span>
+              <div>
+                <h3>Choose the rule</h3>
+                <p>Match the question to the correct phonological pattern using visual cues.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">03</span>
+              <div>
+                <h3>Track your streak</h3>
+                <p>Build momentum with points, level-ups, and a personal learning dashboard.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="scoreboard" class="showcase container">
+          <div class="showcase-card leaderboard">
+            <div class="section-heading compact">
+              <p class="eyebrow">Leaderboard</p>
+              <h2>Top phonology battlers</h2>
+            </div>
+
+            <ul class="leaderboard-list">
+              <li>
+                <span class="rank">#1</span>
+                <span class="player">Marta</span>
+                <span class="score">9,840</span>
+              </li>
+              <li>
+                <span class="rank">#2</span>
+                <span class="player">Liam</span>
+                <span class="score">9,110</span>
+              </li>
+              <li>
+                <span class="rank">#3</span>
+                <span class="player">Aisha</span>
+                <span class="score">8,760</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="showcase-card metrics">
+            <div class="mini-stat">
+              <span class="label">Daily streak</span>
+              <strong>18 days</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="label">Correct answers</span>
+              <strong>91%</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="label">Fastest round</span>
+              <strong>14 sec</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" class="cta-band">
+          <div class="container cta-inner">
+            <div>
+              <p class="eyebrow light">Ready to play?</p>
+              <h2>Launch your phonology challenge today.</h2>
+            </div>
+            <a href="#" class="button primary large">Try the demo</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>© <span id="year"></span> Phonology Battle</p>
+          <p>Learn sound patterns. Build confidence. Play smarter.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
